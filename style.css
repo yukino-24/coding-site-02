@@ -1,0 +1,228 @@
+img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+header .mv {
+  position: relative;
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 767px) {
+  header .mv {
+    margin-bottom: 72px;
+  }
+}
+header .mv .mv-p {
+  width: 100%;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  header .mv .mv-p {
+    height: 500px;
+  }
+}
+header .mv .logo {
+  position: absolute;
+  top: 26px;
+  left: 44px;
+}
+@media screen and (max-width: 767px) {
+  header .mv .logo {
+    left: 20px;
+  }
+}
+header .mv .description {
+  position: absolute;
+  top: 132px;
+  left: 44px;
+}
+@media screen and (max-width: 767px) {
+  header .mv .description {
+    width: 210px;
+    top: 80px;
+    left: 20px;
+  }
+}
+header .mv .box-button {
+  position: absolute;
+  top: 352px;
+  left: 44px;
+}
+@media screen and (max-width: 767px) {
+  header .mv .box-button {
+    width: 200px;
+    top: 214px;
+    left: 20px;
+  }
+}
+header .mv .mark {
+  position: absolute;
+  top: 536px;
+  right: 28px;
+}
+@media screen and (max-width: 767px) {
+  header .mv .mark {
+    top: 370px;
+    width: 180px;
+  }
+}
+header .mv .side-button {
+  position: absolute;
+  top: 48px;
+  right: 0px;
+  width: 48px;
+  height: 210px;
+  background-color: #45CCC4;
+  border-radius: 10px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .mv .side-button img {
+  height: 60%;
+}
+@media screen and (max-width: 767px) {
+  header .mv .side-button {
+    display: none;
+  }
+}
+
+main .course img {
+  display: block;
+}
+main .course .course-title {
+  padding: 0 40px;
+  text-align: center;
+  margin: 0 auto 180px;
+  max-width: 751px;
+}
+@media screen and (max-width: 767px) {
+  main .course .course-title {
+    padding: 0 20px;
+  }
+}
+main .course .green-box {
+  background-color: rgba(69, 204, 196, 0.5);
+  padding-bottom: 140px;
+}
+main .course .course-flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  main .course .course-flex {
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 44px;
+  }
+}
+@media screen and (max-width: 767px) {
+  main .course .course-flex .course-item {
+    margin: 0 40px;
+  }
+}
+main .course .course-flex .course-item:nth-of-type(1) {
+  padding-right: 80px;
+}
+@media screen and (max-width: 767px) {
+  main .course .course-flex .course-item:nth-of-type(1) {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  main .course .course-flex .course-item:nth-child(2) .title {
+    margin-top: 50px;
+  }
+}
+main .course .course-flex .course-item .title {
+  margin-top: -130px;
+}
+main .course .course-flex .course-item .title::after {
+  content: "oooo";
+  width: 1px;
+  height: 80px;
+  margin: 0 auto;
+  background-color: black;
+  position: absolute;
+  bottom: -58px;
+  left: 0;
+  right: 0;
+}
+main .course .course-flex .course-item .circle {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  margin: 40px auto 20px;
+}
+main .course .course-flex .course-item .text {
+  font-weight: bold;
+  line-height: 1.8;
+}
+main .course .course-pr {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  main .course .course-pr {
+    padding: 0 20px;
+  }
+}
+main .course .course-detail {
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  main .course .course-detail {
+    padding: 0 20px;
+  }
+}
+main .feature-index {
+  background-color: #E9EFF1;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  main .feature-index {
+    padding-bottom: 40px;
+  }
+}
+main .feature-index .feature-icon {
+  margin: -80px auto 26px;
+}
+@media screen and (max-width: 767px) {
+  main .feature-index .feature-icon {
+    width: 200px;
+    margin-top: -60px;
+    margin-bottom: 50px;
+  }
+}
+main .feature-index .text {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 50px;
+  letter-spacing: 1.92px;
+}
+@media screen and (max-width: 767px) {
+  main .feature-index .text {
+    font-size: 19px;
+  }
+}
+main .feature-index li {
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  main .feature-index li {
+    padding: 0 20px 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
