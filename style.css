@@ -9,7 +9,30 @@ img {
 }
 
 .center {
+  margin: 0 auto;
   text-align: center;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 13px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.red {
+  background-color: #EB4E45;
+  width: 380px;
+  height: 17px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  line-height: 17px;
 }
 
 header .mv {
@@ -191,6 +214,7 @@ main .course .course-detail {
 main .feature-index {
   background-color: #E9EFF1;
   padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 767px) {
   main .feature-index {
@@ -225,4 +249,30 @@ main .feature-index li {
   main .feature-index li {
     padding: 0 20px 10px;
   }
+}
+main .feature .feature-title {
+  margin-bottom: 25px;
+}
+main .feature .text {
+  margin-bottom: 40px;
+  line-height: 25px;
+}
+main .feature .item {
+  max-width: 380px;
+  margin: 0 auto;
+}
+main .feature .item .feature1-pic {
+  margin-bottom: 10px;
+}
+main .feature .item .description {
+  margin-bottom: 40px;
+  line-height: 20px;
+  text-align: left;
+}
+main .feature .course-sub {
+  display: flex;
+  justify-content: center;
+}
+main .feature .course-sub .description {
+  padding: 0 20px;
 }/*# sourceMappingURL=style.css.map */
