@@ -35,6 +35,45 @@ p {
   line-height: 17px;
 }
 
+.point {
+  background-color: #ECFCFB;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+.point .inner {
+  max-width: 840px;
+  margin: 0 auto;
+  text-align: left;
+}
+.point .inner .point-icon {
+  margin-top: -40px;
+}
+.point .inner .point-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.point .inner .point-flex .text-box {
+  width: 62%;
+  margin-right: 6%;
+}
+.point .inner .point-flex .text-box .title {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 21px;
+}
+.point .inner .point-flex .text-box .text {
+  line-height: 25px;
+}
+.point .inner .point-flex .text-box .text .mark {
+  background: linear-gradient(transparent 0%, #f6ff5f 0%);
+}
+.point .inner .point-flex .point-img {
+  width: 32%;
+  max-width: 256px;
+}
+
 header .mv {
   position: relative;
   margin-bottom: 90px;
@@ -253,7 +292,7 @@ main .feature-index li {
 main .feature .feature-title {
   margin-bottom: 25px;
 }
-main .feature .text {
+main .feature .feature-text {
   margin-bottom: 40px;
   line-height: 25px;
 }
@@ -272,7 +311,51 @@ main .feature .item .description {
 main .feature .course-sub {
   display: flex;
   justify-content: center;
+  max-width: 840px;
+  margin: 0 auto;
 }
 main .feature .course-sub .description {
   padding: 0 20px;
+}
+main .feature .course-other {
+  text-decoration: underline;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+main .feature .course-other a {
+  position: relative;
+}
+main .feature .course-other a::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  transform: rotate(45deg);
+  position: absolute;
+  right: -16px;
+  top: 6px;
+}
+main .feature .course-intro {
+  background-color: #ECFCFB;
+  padding: 40px 20px;
+  margin-bottom: 50px;
+}
+main .feature .course-intro .intro-title {
+  max-width: 840px;
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-weight: bold;
+  margin: 0 auto 25px;
+}
+main .feature .course-intro .detail-box {
+  position: relative;
+}
+main .feature .course-intro .detail-box .curriculum-img {
+  width: 115px;
+  position: absolute;
+  right: 25%;
+  bottom: -20px;
 }/*# sourceMappingURL=style.css.map */

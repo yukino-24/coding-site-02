@@ -1,4 +1,6 @@
 // 共通
+$background-color:#ECFCFB;
+
 img{
     max-width: 100%;
 }
@@ -29,7 +31,48 @@ p{
     color: #FFFFFF;
     line-height: 17px;
 }
+.point{
+    background-color: $background-color;
+    margin-bottom: 50px;
+    padding: 0 20px;
 
+    .inner{
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: left;
+    .point-icon{
+        margin-top: -40px;
+    }
+    .point-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 40px;
+        .text-box{
+            width: 62%;
+            margin-right: 6%;
+        .title{
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 21px;
+        }
+        .text{
+           line-height: 25px;
+            .mark{
+                background: linear-gradient(transparent 0%, #f6ff5f 0%);
+            }
+        }
+      
+        }
+        .point-img{
+            width: 32%;
+            max-width: 256px;
+        }
+    }
+
+    } 
+   
+}
 
 // ヘッダー
 header{
@@ -236,7 +279,7 @@ main{
     .feature-title{
         margin-bottom: 25px;
     }
-    .text{
+    .feature-text{
         margin-bottom: 40px;
         line-height: 25px;
     }
@@ -255,10 +298,60 @@ main{
     .course-sub{
         display: flex;
         justify-content: center;
+        max-width: 840px;
+        margin: 0 auto;
         .description{
             padding: 0 20px;
         }
     }
+    .course-other{
+        text-decoration: underline;
+        font-size: 14px;
+        margin-bottom: 50px;
+       
+        a{
+            position: relative;
+            
+        &::after{
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-right: 1px solid #000;
+            border-top: 1px solid #000;
+            transform: rotate(45deg);
+            position: absolute;
+            right: -16px;
+            top: 6px;
+            
+        }
+        }
+    }
+    .course-intro{
+        background-color: $background-color;
+        padding: 40px 20px;
+        margin-bottom: 50px;
+        .intro-title{
+            max-width: 840px;
+            height: 40px;
+            line-height: 40px;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            font-weight: bold;
+            margin:0 auto 25px;
+        }
+        .detail-box{
+            position: relative;
+            .curriculum-img{
+                width: 115px;
+                position: absolute;
+                right: 25%;
+                bottom: -20px;
+            }
+        }
+    }
+   
+
+
     }
 
 
