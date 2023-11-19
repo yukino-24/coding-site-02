@@ -24,7 +24,6 @@ p{
 }
 .red{
     background-color: #EB4E45;
-    width: 380px;
     height: 17px;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -42,22 +41,44 @@ p{
     text-align: left;
     .point-icon{
         margin-top: -40px;
+        margin-bottom: 4px;
+        @media screen and (max-width: 767px) {
+            width: 80px;
+        }
     }
     .point-flex{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-bottom: 40px;
+        @media screen and (max-width: 767px) {
+            flex-flow: column;
+            align-items: flex-start;
+            padding-bottom: 30px;
+
+        }
         .text-box{
             width: 62%;
             margin-right: 6%;
+            @media screen and (max-width: 767px) {
+                margin-right: 0;
+                width: 100%;
+            }
         .title{
             font-size: 17px;
             font-weight: bold;
             margin-bottom: 21px;
+            @media screen and (max-width: 767px) {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
         }
         .text{
            line-height: 25px;
+           @media screen and (max-width: 767px) {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
             .mark{
                 background: linear-gradient(transparent 0%, #f6ff5f 0%);
             }
@@ -67,6 +88,11 @@ p{
         .point-img{
             width: 32%;
             max-width: 256px;
+            @media screen and (max-width: 767px) {
+               width: 100%;
+               max-width: 100%;
+               text-align: center;
+            }
         }
     }
 
@@ -276,16 +302,26 @@ main{
         }
     }
     .feature{
+        
     .feature-title{
         margin-bottom: 25px;
+        @media screen and (max-width: 767px) {
+            padding: 0 20px;
+        }
     }
     .feature-text{
         margin-bottom: 40px;
         line-height: 25px;
+        @media screen and (max-width: 767px) {
+            padding: 0 20px;
+        }
     }
     .item{
         max-width: 380px;
         margin: 0 auto;
+        @media screen and (max-width: 767px) {
+            padding: 0 20px;
+        }
     .feature1-pic{
         margin-bottom: 10px;
     }
@@ -295,11 +331,14 @@ main{
         text-align: left;
     }
     }
-    .course-sub{
+    .course-flex{
         display: flex;
         justify-content: center;
         max-width: 840px;
         margin: 0 auto;
+        @media screen and (max-width: 767px) {
+            flex-flow: column;
+        }
         .description{
             padding: 0 20px;
         }
