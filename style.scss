@@ -32,7 +32,6 @@ p{
 }
 .point{
     background-color: $background-color;
-    margin-bottom: 50px;
     padding: 0 20px;
 
     .inner{
@@ -91,7 +90,7 @@ p{
             @media screen and (max-width: 767px) {
                width: 100%;
                max-width: 100%;
-               text-align: center;
+               margin: 0 auto;
             }
         }
     }
@@ -195,6 +194,9 @@ main{
         .green-box{
             background-color: rgba(69,204,196,0.5);
             padding-bottom: 140px;
+            @media screen and (max-width: 767px) {
+                padding-bottom: 80px;
+            }
         }
         .course-flex{
             display: flex;
@@ -272,15 +274,12 @@ main{
         background-color: #E9EFF1;
         padding-bottom: 50px;
         margin-bottom: 50px;
-        @media screen and (max-width: 767px) {
-            padding-bottom: 40px;
-        }
                 .feature-icon{
                     margin: -80px auto 26px;
                     @media screen and (max-width: 767px) {
                         width: 200px;
-                        margin-top: -60px;
-                        margin-bottom: 50px;
+                        margin-top: -50px;
+                        margin-bottom: 48px;
                         
                       }
                 }
@@ -302,7 +301,7 @@ main{
         }
     }
     .feature{
-        
+        margin-bottom: 50px;
     .feature-title{
         margin-bottom: 25px;
         @media screen and (max-width: 767px) {
@@ -314,6 +313,7 @@ main{
         line-height: 25px;
         @media screen and (max-width: 767px) {
             padding: 0 20px;
+            text-align: left;
         }
     }
     .item{
@@ -343,11 +343,13 @@ main{
             padding: 0 20px;
         }
     }
-    .course-other{
+    .other{
         text-decoration: underline;
         font-size: 14px;
         margin-bottom: 50px;
-       
+        @media screen and (max-width: 767px) {
+            margin-bottom: 40px;
+        }
         a{
             position: relative;
             
@@ -369,15 +371,6 @@ main{
         background-color: $background-color;
         padding: 40px 20px;
         margin-bottom: 50px;
-        .intro-title{
-            max-width: 840px;
-            height: 40px;
-            line-height: 40px;
-            border-top: 1px solid #000;
-            border-bottom: 1px solid #000;
-            font-weight: bold;
-            margin:0 auto 25px;
-        }
         .detail-box{
             position: relative;
             .curriculum-img{
@@ -388,13 +381,47 @@ main{
             }
         }
     }
-   
+    .intro-title{
+        max-width: 840px;
+        height: 40px;
+        line-height: 40px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        font-weight: bold;
+        margin:0 auto 25px;
+    }
+    }
 
-
+    .feature-2{
+        .img{
+            height: 600px;
+            object-fit: cover;
+            @media screen and (max-width: 767px) {
+                height: 400px;
+            }
+        }
+        }
+    .feature-3{
+        .feature-title{
+            margin-bottom: 50px;
+        }
+        .coach-flex{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            .coach-item{
+            width: 30%;
+            height: 156px;
+            background-color: #F5F5F5;
+            }
+            
+        }
+    }
+    
     }
 
 
-    }
+    
 
 
 // フッター

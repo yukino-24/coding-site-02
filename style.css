@@ -36,7 +36,6 @@ p {
 
 .point {
   background-color: #ECFCFB;
-  margin-bottom: 50px;
   padding: 0 20px;
 }
 .point .inner {
@@ -107,7 +106,7 @@ p {
   .point .inner .point-flex .point-img {
     width: 100%;
     max-width: 100%;
-    text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -215,6 +214,11 @@ main .course .green-box {
   background-color: rgba(69, 204, 196, 0.5);
   padding-bottom: 140px;
 }
+@media screen and (max-width: 767px) {
+  main .course .green-box {
+    padding-bottom: 80px;
+  }
+}
 main .course .course-flex {
   display: flex;
   align-items: baseline;
@@ -292,19 +296,14 @@ main .feature-index {
   padding-bottom: 50px;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 767px) {
-  main .feature-index {
-    padding-bottom: 40px;
-  }
-}
 main .feature-index .feature-icon {
   margin: -80px auto 26px;
 }
 @media screen and (max-width: 767px) {
   main .feature-index .feature-icon {
     width: 200px;
-    margin-top: -60px;
-    margin-bottom: 50px;
+    margin-top: -50px;
+    margin-bottom: 48px;
   }
 }
 main .feature-index .text {
@@ -326,6 +325,9 @@ main .feature-index li {
     padding: 0 20px 10px;
   }
 }
+main .feature {
+  margin-bottom: 50px;
+}
 main .feature .feature-title {
   margin-bottom: 25px;
 }
@@ -341,6 +343,7 @@ main .feature .feature-text {
 @media screen and (max-width: 767px) {
   main .feature .feature-text {
     padding: 0 20px;
+    text-align: left;
   }
 }
 main .feature .item {
@@ -374,15 +377,20 @@ main .feature .course-flex {
 main .feature .course-flex .description {
   padding: 0 20px;
 }
-main .feature .course-other {
+main .feature .other {
   text-decoration: underline;
   font-size: 14px;
   margin-bottom: 50px;
 }
-main .feature .course-other a {
+@media screen and (max-width: 767px) {
+  main .feature .other {
+    margin-bottom: 40px;
+  }
+}
+main .feature .other a {
   position: relative;
 }
-main .feature .course-other a::after {
+main .feature .other a::after {
   content: "";
   width: 7px;
   height: 7px;
@@ -398,15 +406,6 @@ main .feature .course-intro {
   padding: 40px 20px;
   margin-bottom: 50px;
 }
-main .feature .course-intro .intro-title {
-  max-width: 840px;
-  height: 40px;
-  line-height: 40px;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  font-weight: bold;
-  margin: 0 auto 25px;
-}
 main .feature .course-intro .detail-box {
   position: relative;
 }
@@ -415,4 +414,36 @@ main .feature .course-intro .detail-box .curriculum-img {
   position: absolute;
   right: 25%;
   bottom: -20px;
+}
+main .feature .intro-title {
+  max-width: 840px;
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-weight: bold;
+  margin: 0 auto 25px;
+}
+main .feature-2 .img {
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  main .feature-2 .img {
+    height: 400px;
+  }
+}
+main .feature-3 .feature-title {
+  margin-bottom: 50px;
+}
+main .feature-3 .coach-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+main .feature-3 .coach-flex .coach-item {
+  width: 30%;
+  height: 156px;
+  background-color: #F5F5F5;
 }/*# sourceMappingURL=style.css.map */
