@@ -437,12 +437,18 @@ main .feature-2 .img {
 main .feature-3 .feature-title {
   margin-bottom: 50px;
 }
-main .feature-3 .coach-flex {
+main .feature-3 .coach {
+  padding: 0 20px;
+}
+main .feature-3 .coach .intro-title {
+  margin: 0 auto 25px;
+}
+main .feature-3 .coach .coach-flex {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
-main .feature-3 .coach-flex .coach-item {
+main .feature-3 .coach .coach-flex .coach-item {
   width: 30%;
   height: 156px;
   background-color: #F5F5F5;
