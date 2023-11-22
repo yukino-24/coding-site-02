@@ -1,5 +1,6 @@
 // 共通
 $background-color:#ECFCFB;
+$background-color-sub: #F5F5F5;
 
 img{
     max-width: 100%;
@@ -12,6 +13,9 @@ img{
 .center{
     margin: 0 auto;
     text-align: center;
+}
+h1{
+    font-size: 16px;
 }
 h3{
     font-size: 14px;
@@ -389,6 +393,7 @@ main{
         border-bottom: 1px solid #000;
         font-weight: bold;
         margin:0 auto 25px;
+        font-size: 14px;
     }
     }
 
@@ -413,17 +418,79 @@ main{
         .coach-flex{
             display: flex;
             flex-wrap: wrap;
-            margin-bottom: 30px;
+            max-width: 840px;
+            margin: 0 auto;
+            justify-content: space-between;
             .coach-item{
-            width: 30%;
-            height: 156px;
-            background-color: #F5F5F5;
+            width: 31%;
+            background-color: $background-color-sub;
+            margin-right:3%;
+            margin-bottom:3%;
+            @media screen and (max-width: 767px) {
+               width: 48%;
+               margin-right: 0;
+               margin-bottom: 4%;
             }
-            
+            &:nth-child(3n){
+                margin-right: 0;
+            }
+            &:nth-last-child(1){
+                margin-bottom: 40px;
+            }
+            .inner{
+                padding: 20px;
+            .subject{
+                width: 40px;
+                height: 16px;
+                background-color: #333333;
+                color: #FFFFFF;
+                line-height: 16px;
+                margin-bottom: 10px;
+            }
+            .coach-name{
+                margin-bottom: 10px;
+                text-align: left;
+            }
+            .coach-comment{
+                text-align: left;
+                line-height: 22px;
+
+            }
+            }
+            }
         }
         }
     }
-    
+    .feature-4{
+        .success{
+            padding: 0 20px;
+        }
+        .diagram{
+            margin-bottom: 60px;
+            max-width: 840px;
+            @media screen and (max-width: 767px) {
+                width: 100%;
+                margin-bottom: 40px;
+             }
+        }
+        .voice{
+            background-image: url(img/bgi.svg);
+            max-width: 840px;
+            height: 240px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            .icon{
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+            }
+            .content{
+                width: 50%;
+            }
+        }
+
+    }
     }
 
 

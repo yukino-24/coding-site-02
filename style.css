@@ -13,6 +13,10 @@ img {
   text-align: center;
 }
 
+h1 {
+  font-size: 16px;
+}
+
 h3 {
   font-size: 14px;
 }
@@ -423,6 +427,7 @@ main .feature .intro-title {
   border-bottom: 1px solid #000;
   font-weight: bold;
   margin: 0 auto 25px;
+  font-size: 14px;
 }
 main .feature-2 .img {
   height: 600px;
@@ -446,10 +451,74 @@ main .feature-3 .coach .intro-title {
 main .feature-3 .coach .coach-flex {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  max-width: 840px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 main .feature-3 .coach .coach-flex .coach-item {
-  width: 30%;
-  height: 156px;
+  width: 31%;
   background-color: #F5F5F5;
+  margin-right: 3%;
+  margin-bottom: 3%;
+}
+@media screen and (max-width: 767px) {
+  main .feature-3 .coach .coach-flex .coach-item {
+    width: 48%;
+    margin-right: 0;
+    margin-bottom: 4%;
+  }
+}
+main .feature-3 .coach .coach-flex .coach-item:nth-child(3n) {
+  margin-right: 0;
+}
+main .feature-3 .coach .coach-flex .coach-item:nth-last-child(1) {
+  margin-bottom: 40px;
+}
+main .feature-3 .coach .coach-flex .coach-item .inner {
+  padding: 20px;
+}
+main .feature-3 .coach .coach-flex .coach-item .inner .subject {
+  width: 40px;
+  height: 16px;
+  background-color: #333333;
+  color: #FFFFFF;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+main .feature-3 .coach .coach-flex .coach-item .inner .coach-name {
+  margin-bottom: 10px;
+  text-align: left;
+}
+main .feature-3 .coach .coach-flex .coach-item .inner .coach-comment {
+  text-align: left;
+  line-height: 22px;
+}
+main .feature-4 .success {
+  padding: 0 20px;
+}
+main .feature-4 .diagram {
+  margin-bottom: 60px;
+  max-width: 840px;
+}
+@media screen and (max-width: 767px) {
+  main .feature-4 .diagram {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+main .feature-4 .voice {
+  background-image: url(img/bgi.svg);
+  max-width: 840px;
+  height: 240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+main .feature-4 .voice .icon {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+main .feature-4 .voice .content {
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */
