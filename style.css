@@ -111,6 +111,7 @@ p {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -471,8 +472,10 @@ main .feature-3 .coach .coach-flex .coach-item {
 main .feature-3 .coach .coach-flex .coach-item:nth-child(3n) {
   margin-right: 0;
 }
-main .feature-3 .coach .coach-flex .coach-item:nth-last-child(1) {
-  margin-bottom: 40px;
+@media screen and (max-width: 767px) {
+  main .feature-3 .coach .coach-flex .coach-item:nth-last-child(1) {
+    margin-bottom: 40px;
+  }
 }
 main .feature-3 .coach .coach-flex .coach-item .inner {
   padding: 20px;
@@ -509,16 +512,38 @@ main .feature-4 .diagram {
 main .feature-4 .voice {
   background-image: url(img/bgi.svg);
   max-width: 840px;
-  height: 240px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
+}
+main .feature-4 .voice .inner {
+  padding: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-main .feature-4 .voice .icon {
+@media screen and (max-width: 767px) {
+  main .feature-4 .voice .inner {
+    flex-flow: column;
+    text-align: left;
+  }
+}
+main .feature-4 .voice .inner .icon {
   width: 180px;
   height: 180px;
   border-radius: 50%;
+  margin-right: 15%;
+  vertical-align: middle;
 }
-main .feature-4 .voice .content {
-  width: 50%;
+main .feature-4 .voice .inner .content {
+  width: 46%;
+  vertical-align: middle;
+}
+main .feature-4 .voice .inner .content .title {
+  margin-bottom: 30px;
+}
+main .feature-4 .voice .inner .content .student-name {
+  margin-bottom: 25px;
+}
+main .feature-4 .voice .inner .content .student-comment {
+  line-height: 26px;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
