@@ -502,6 +502,7 @@ main .feature-4 .success {
 main .feature-4 .diagram {
   margin-bottom: 60px;
   max-width: 840px;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   main .feature-4 .diagram {
