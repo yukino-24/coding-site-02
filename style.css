@@ -229,6 +229,7 @@ main .course .course-flex {
   align-items: baseline;
   justify-content: center;
   margin-bottom: 60px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 767px) {
   main .course .course-flex {
@@ -515,6 +516,11 @@ main .feature-4 .voice {
   max-width: 840px;
   margin: 0 auto 30px;
 }
+@media screen and (max-width: 767px) {
+  main .feature-4 .voice {
+    margin-bottom: 20px;
+  }
+}
 main .feature-4 .voice .inner {
   padding: 30px;
   display: flex;
@@ -534,15 +540,43 @@ main .feature-4 .voice .inner .icon {
   margin-right: 15%;
   vertical-align: middle;
 }
+@media screen and (max-width: 767px) {
+  main .feature-4 .voice .inner .icon {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}
 main .feature-4 .voice .inner .content {
   width: 46%;
   vertical-align: middle;
 }
+@media screen and (max-width: 767px) {
+  main .feature-4 .voice .inner .content {
+    text-align: center;
+    width: 100%;
+  }
+}
 main .feature-4 .voice .inner .content .title {
   margin-bottom: 30px;
+  font-weight: bold;
+}
+main .feature-4 .voice .inner .content .title span {
+  background-color: #FFFFFF;
+  padding: 5px 15px;
+}
+@media screen and (max-width: 767px) {
+  main .feature-4 .voice .inner .content .title {
+    margin-bottom: 15px;
+  }
 }
 main .feature-4 .voice .inner .content .student-name {
   margin-bottom: 25px;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  main .feature-4 .voice .inner .content .student-name {
+    margin-bottom: 15px;
+  }
 }
 main .feature-4 .voice .inner .content .student-comment {
   line-height: 26px;

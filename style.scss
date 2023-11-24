@@ -1,6 +1,8 @@
 // 共通
 $background-color:#ECFCFB;
 $background-color-sub: #F5F5F5;
+$accent:#45CCC4;
+$white:#FFFFFF;
 
 img{
     max-width: 100%;
@@ -8,11 +10,13 @@ img{
 .pc{
     @media screen and (max-width: 767px) {
         display: none;
+        
       }
 }
 .center{
     margin: 0 auto;
     text-align: center;
+   
 }
 h1{
     font-size: 16px;
@@ -31,7 +35,7 @@ p{
     height: 17px;
     margin: 0 auto;
     margin-bottom: 10px;
-    color: #FFFFFF;
+    color: $white;
     line-height: 17px;
 }
 .point{
@@ -163,7 +167,7 @@ header{
             right: 0px;
             width: 48px;
             height: 210px;
-            background-color: #45CCC4;
+            background-color: $accent;
             border-radius: 10px 0px 0px 0px;
             display: flex;
             justify-content: center;
@@ -182,7 +186,7 @@ header{
 // メインコンテンツ
 main{
     .course{
-        
+
         img{
             display: block;
         }
@@ -208,7 +212,7 @@ main{
             align-items: baseline;
             justify-content: center;
             margin-bottom: 60px;
-           
+            padding: 0 20px;
             @media screen and (max-width: 767px) {
                 flex-flow: column;
                 align-items: center;
@@ -446,7 +450,7 @@ main{
                 width: 40px;
                 height: 16px;
                 background-color: #333333;
-                color: #FFFFFF;
+                color: $white;
                 line-height: 16px;
                 margin-bottom: 10px;
             }
@@ -482,7 +486,9 @@ main{
             max-width: 840px;
             // height: 240px;
             margin: 0 auto 30px;
-          
+            @media screen and (max-width: 767px) {
+                margin-bottom: 20px;
+             }
             .inner{
                 padding: 30px ;
                 display: flex;
@@ -498,16 +504,35 @@ main{
                     border-radius: 50%;
                     margin-right: 15%;
                     vertical-align:middle;
+                    @media screen and (max-width: 767px) {
+                        margin-bottom: 15px;
+                        margin-right: 0;
+                     }
                 }
                 .content{
                     width: 46%;
                     vertical-align:middle;
+                    @media screen and (max-width: 767px) {
+                        text-align: center;
+                        width: 100%;
+                     }
                     .title{
                         margin-bottom: 30px;
+                        font-weight: bold;
+                        span{
+                            background-color: $white;
+                            padding: 5px 15px;
+                        }
+                        @media screen and (max-width: 767px) {
+                            margin-bottom: 15px;
+                         }
                     }
                     .student-name{
                         margin-bottom: 25px;
-                        
+                        font-weight: bold;
+                        @media screen and (max-width: 767px) {
+                            margin-bottom: 15px;
+                         }
                     }
                     .student-comment{
                         line-height: 26px;
@@ -516,7 +541,6 @@ main{
                 }
 
             }
-          
         }
 
     }
