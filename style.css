@@ -581,4 +581,32 @@ main .feature-4 .voice .inner .content .student-name {
 main .feature-4 .voice .inner .content .student-comment {
   line-height: 26px;
   text-align: left;
+}
+
+.feature-5 .follow {
+  display: flex;
+  justify-content: space-between;
+  max-width: 840px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.feature-5 .follow .item {
+  width: 31%;
+  background-color: #ECFCFB;
+  padding: 10px;
+}
+.feature-5 .follow .item .inner {
+  height: 160px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-5 .follow .item .inner p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+}
+.feature-5 .point {
+  margin-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */

@@ -545,6 +545,39 @@ main{
 
     }
     }
+    .feature-5{
+        .follow{
+            display: flex;
+            justify-content: space-between;
+            max-width: 840px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            .item{
+                width: 31%;
+                background-color: $background-color;
+                padding: 10px;
+                .inner{
+                    height: 160px;
+                    border: 1px solid #000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        font-size: 20px;
+                        font-weight: bold;
+                        line-height: 28px;
+                    }
+                }
+
+            }
+        }
+        .point{
+            margin-bottom: 40px;
+        }
+        .support-other{
+            
+        }
+    }
 
 
     
