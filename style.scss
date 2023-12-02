@@ -581,6 +581,14 @@ main{
             max-width: 600px;
             flex-wrap: wrap;
             margin: 0 auto;
+            li{
+                &::before{
+                    content:"●";
+                    color:$accent;
+                }
+                margin-right: 50px;
+                margin-bottom: 14px;
+            }
         }
     }
 

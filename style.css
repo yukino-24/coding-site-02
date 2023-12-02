@@ -1,3 +1,4 @@
+@charset "UTF-8";
 img {
   max-width: 100%;
 }
@@ -617,4 +618,12 @@ main .feature-4 .voice .inner .content .student-comment {
   max-width: 600px;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+.feature-5 .support-menu li {
+  margin-right: 50px;
+  margin-bottom: 14px;
+}
+.feature-5 .support-menu li::before {
+  content: "●";
+  color: #45CCC4;
 }/*# sourceMappingURL=style.css.map */
