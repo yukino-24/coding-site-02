@@ -581,14 +581,30 @@ main{
             max-width: 600px;
             flex-wrap: wrap;
             margin: 0 auto;
+            margin-bottom: 120px;
             li{
                 &::before{
                     content:"●";
                     color:$accent;
                 }
-                margin-right: 50px;
-                margin-bottom: 14px;
+                margin:0 20px;
+                line-height: 2;
+                font-weight: bold;
             }
+        }
+    }
+    .sns{
+        background-image: url(img/sns-back@2x.png);
+        .title{
+            background-color: $white;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 0.08em;
+            padding: 28px 0;
+            text-align: center;
+            border-top: solid 1px #000;
+            border-bottom: solid 1px #000;
+            margin-bottom: 40px;
         }
     }
 
