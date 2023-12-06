@@ -595,6 +595,12 @@ main{
     }
     .sns{
         background-image: url(img/sns-back@2x.png);
+        padding: 50px 0;
+        .inner{
+            max-width: 970px;
+            padding: 0 20px;
+            margin: 0 auto;
+        
         .title{
             background-color: $white;
             font-size: 28px;
@@ -605,6 +611,19 @@ main{
             border-top: solid 1px #000;
             border-bottom: solid 1px #000;
             margin-bottom: 40px;
+        }
+        .btn{
+            width: 200px;
+            height: 60px;
+            background-color: $white;
+            border-radius: 30px;
+            border: solid 1px #000;
+            font-size: 15px;
+            margin: 0 auto 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         }
     }
 
