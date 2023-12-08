@@ -650,6 +650,14 @@ main .feature-4 .voice .inner .content .student-comment {
   border-bottom: solid 1px #000;
   margin-bottom: 40px;
 }
+.sns .inner .timeline {
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.sns .inner .timeline .twitter-timeline {
+  margin: 0 auto;
+}
 .sns .inner .btn {
   width: 200px;
   height: 60px;
