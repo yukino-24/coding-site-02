@@ -638,3 +638,36 @@ main{
 
 
 // フッター
+footer{
+    display: flex;
+    align-items: center;
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $accent;
+        width:  calc(100% / 3);
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 28px 0;
+        span::before{ 
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-right: 1px solid #000;
+        border-top: 1px solid #000;
+        transform: rotate(45deg);
+        position: absolute;
+        right: -16px;
+        top: 6px;
+       }
+        &:nth-child(2){
+            border-left: solid 1px #fff;
+            border-right: solid 1px #fff;
+            
+        }
+        
+
+    }
+}

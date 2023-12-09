@@ -669,4 +669,35 @@ main .feature-4 .voice .inner .content .student-comment {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+}
+footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #45CCC4;
+  width: 33.3333333333%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 28px 0;
+}
+footer a span::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  transform: rotate(45deg);
+  position: absolute;
+  right: -16px;
+  top: 6px;
+}
+footer a:nth-child(2) {
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
 }/*# sourceMappingURL=style.css.map */
