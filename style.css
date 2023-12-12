@@ -621,6 +621,14 @@ main .feature-4 .voice .inner .content .student-comment {
   margin: 0 auto;
   margin-bottom: 120px;
 }
+@media screen and (max-width: 767px) {
+  .feature-5 .support-menu {
+    flex-flow: column;
+    align-items: flex-start;
+    text-align: center;
+    max-width: 300px;
+  }
+}
 .feature-5 .support-menu li {
   margin: 0 20px;
   line-height: 2;
