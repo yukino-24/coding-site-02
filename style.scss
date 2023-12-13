@@ -253,8 +253,9 @@ main{
                    
                 }
                 .circle{
-                    width: 280px;
-                    height: 280px;
+                    width: 100%;
+                    max-width: 280px;
+                   
                     border-radius: 50%;
                     margin: 40px auto 20px;
                     
