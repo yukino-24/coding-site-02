@@ -239,6 +239,9 @@ main{
                 }
                 .title{
                     margin-top: -130px;
+                    @media screen and (max-width: 767px) {
+                        margin: -130px auto 0;
+                      }
                     &::after{
                         content: "oooo";
                         width: 1px;
@@ -258,7 +261,7 @@ main{
                    
                     border-radius: 50%;
                     margin: 40px auto 20px;
-                    
+                  
                 }
                 .text{
                     font-weight: bold;
@@ -559,15 +562,21 @@ main{
                 background-color: $background-color;
                 padding: 10px;
                 .inner{
-                    height: 160px;
+                    height: 144px;
                     border: 1px solid #000;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    @media screen and (max-width: 767px) {
+                        height: 80px;
+                    }
                     p{
                         font-size: 20px;
                         font-weight: bold;
                         line-height: 28px;
+                        @media screen and (max-width: 767px) {
+                            font-size: 12px;
+                        }
                     }
                 }
 

@@ -261,6 +261,11 @@ main .course .course-flex .course-item:nth-of-type(1) {
 main .course .course-flex .course-item .title {
   margin-top: -130px;
 }
+@media screen and (max-width: 767px) {
+  main .course .course-flex .course-item .title {
+    margin: -130px auto 0;
+  }
+}
 main .course .course-flex .course-item .title::after {
   content: "oooo";
   width: 1px;
@@ -598,16 +603,26 @@ main .feature-4 .voice .inner .content .student-comment {
   padding: 10px;
 }
 .feature-5 .follow .item .inner {
-  height: 160px;
+  height: 144px;
   border: 1px solid #000;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 767px) {
+  .feature-5 .follow .item .inner {
+    height: 80px;
+  }
+}
 .feature-5 .follow .item .inner p {
   font-size: 20px;
   font-weight: bold;
   line-height: 28px;
+}
+@media screen and (max-width: 767px) {
+  .feature-5 .follow .item .inner p {
+    font-size: 12px;
+  }
 }
 .feature-5 .point {
   margin-bottom: 40px;
